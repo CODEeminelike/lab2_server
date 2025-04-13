@@ -1,16 +1,16 @@
 {
-  version 2,
-  builds [
+  "version": 2,
+  "builds": [
     {
-      src apiorders.js,
-      use @vercelnode
+      "src": "api/orders.js",
+      "use": "@vercel/node"
     }
   ],
-  routes [
+  "routes": [
     {
-      src apiorders,
-      methods [GET, POST, PUT],
-      dest apiorders
+      "src": "/api/orders",
+      "methods": ["GET", "POST"],
+      "dest": "/api/orders"
     }
   ]
 }
