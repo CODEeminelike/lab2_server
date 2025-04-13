@@ -1,0 +1,16 @@
+{
+  version 2,
+  builds [
+    {
+      src apiorders.js,
+      use @vercelnode
+    }
+  ],
+  routes [
+    {
+      src apiorders,
+      methods [GET, POST, PUT],
+      dest apiorders
+    }
+  ]
+}
